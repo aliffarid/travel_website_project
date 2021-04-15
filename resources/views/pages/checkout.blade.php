@@ -185,9 +185,10 @@
                         <hr/>
                         <h2>Payment Instruction</h2>
                         <p class="payment-instruction">
-                         Please complete payment before you continue the wonderful trip
+                         You will be redirected to another page to finish your payment
                         </p>
-                        <div class="bank">
+                        <img src="{{url ('frontend/images/gopay.png')}}" class="w-50">
+                        {{-- <div class="bank">
                             <div class="bank-item pb-3">
                                 <img src="{{url ('frontend/images/ic_bank.png')}}" alt="" class="bank-image" />
                                 <div class="description">
@@ -212,11 +213,11 @@
                                  </div>
                                  <div class="clearfix"></div>
                              </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="join-container">
                         <a href="{{route('checkout-success', $item->id)}}" class="btn btn-block btn-join-now mt-3 py-2">
-                             I Have Made Payment
+                             Process Payment
                         </a>
                     </div>
                     <div class="text-center mt-3">

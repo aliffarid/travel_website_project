@@ -14,6 +14,9 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use Midtrans\Config;
+use Midtrans\Snap;
+
 class CheckoutController extends Controller
 {
     public function index(Request $request, $id)
@@ -107,15 +110,49 @@ class CheckoutController extends Controller
 
         $transaction->save();
 
-        //return $transaction;
+        // // // set konfigurasi MIDTRANS
+        Config::$serverKey = config('midtrans.serverKey');
+        Config::$isProduction = config('midtrans.isProduction');
+        Config::$isSanitized = config('midtrans.isSanitized');
+        Config::$is3ds = config('midtrans.is3ds');
 
-        //kirim email E-ticket user
-        Mail::to($transaction->user)->send(
-            new TransactionSuccess($transaction)
-        );
+        // // // buat array untuk dikirim ke midtrans
+         $midtrans_params= [
+            'transaction_details' => [
+                 'order_id' => 'Bumantara-' . $transaction->id,
+                'gross_amount' => (int) $transaction->transaction_total
+            ],
+            'customer_details' => [
+                'first_name' => $transaction->user->name,
+                'email' => $transaction->user->email,
+             ],
+             'enabled_payments' => ['gopay'],
+             'vtweb' => []
+         ];
+
+         try {
+                //Ambil Halaman Payment di midtrans
+            $paymentUrl =  \Midtrans\Snap::createTransaction($midtrans_params)->redirect_url;
+
+             //redirect ke halaman midtrans
+            header('Location: ' . $paymentUrl);
+            exit();
+         } catch (Exception $e) {
+             echo $e->getMessage();
+         }
 
 
-        return view('pages.success');
+
+
+        // return $transaction;
+
+        // // //kirim email E-ticket user
+        // Mail::to($transaction->user)->send(
+        //     new TransactionSuccess($transaction)
+        // );
+
+
+        // return view('pages.success');
     }
 
 }

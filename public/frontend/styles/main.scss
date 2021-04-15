@@ -1,7 +1,7 @@
 body {
     background-color: #fff;
-    font-family: 'Assistant', sans-serif;
-    color: #071C4D;
+    font-family: "Assistant", sans-serif;
+    color: #071c4d;
 }
 // navbar
 .navbar-brand {
@@ -23,9 +23,7 @@ body {
     }
 }
 
-
-
-.btn-navbar-right{
+.btn-navbar-right {
     margin-top: -10px !important;
     margin-bottom: -8px !important;
     margin-right: -18px !important;
@@ -33,13 +31,13 @@ body {
     border-radius: 0;
 }
 
-.btn-login{
-    background-color: #071C4D;
+.btn-login {
+    background-color: #071c4d;
     color: #ffffff;
 
-    &:hover{
+    &:hover {
         background-color: #1e3771;
-        color: #ffffff;    
+        color: #ffffff;
     }
 }
 
@@ -50,13 +48,13 @@ header {
     background-image: url(../images/banner.jpg);
     background-size: cover;
 
-    h1, p {
+    h1,
+    p {
         color: #ffffff;
     }
 
     h1 {
-        font-family: 'Playfair Display',
-        serif;
+        font-family: "Playfair Display", serif;
         font-weight: bold;
         font-size: 50px;
     }
@@ -66,11 +64,11 @@ header {
     }
 
     .btn-get-started {
-        background-color: #D4864B;
+        background-color: #d4864b;
         color: #ffffff;
 
         &:hover {
-            background-color:#FF9E53 ;
+            background-color: #ff9e53;
             color: #ffffff;
         }
     }
@@ -105,11 +103,12 @@ header {
     .section-popular-heading {
         margin-top: 150px;
 
-        h2,p {
+        h2,
+        p {
             color: #ffffff;
         }
         h2 {
-            font-family: 'Playfair Display', serif;
+            font-family: "Playfair Display", serif;
             font-weight: bold;
             font-size: 32px;
         }
@@ -117,42 +116,40 @@ header {
             font-size: 18px;
         }
     }
-
-    
 }
 .section-popular-content {
-        .section-popular-travel {
-            .card-travel {
-                min-height: 380px;
-                background-color: #ffffff;
-                color: #ffffff;
-                padding: 30px;
-                background-size: cover;
-                margin-bottom: 20px;
-            }
+    .section-popular-travel {
+        .card-travel {
+            min-height: 380px;
+            background-color: #ffffff;
+            color: #ffffff;
+            padding: 30px;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
 
-            .travel.country {
-                font-size: 18px;
-                color: #ffffff;
-            }
-            
-            .travel-location {
-                font-size: 26px;
-                color: #ffffff;
-            }
+        .travel.country {
+            font-size: 18px;
+            color: #ffffff;
+        }
 
-            .travel-button {
-                .btn-travel-details{
-                    background-color: #CB7E43;
+        .travel-location {
+            font-size: 26px;
+            color: #ffffff;
+        }
+
+        .travel-button {
+            .btn-travel-details {
+                background-color: #cb7e43;
+                color: #ffffff;
+
+                &:hover {
+                    background-color: #ff9e53;
                     color: #ffffff;
-
-                    &:hover {
-                        background-color: #FF9E53;
-                        color: #ffffff;
-                    }
                 }
             }
         }
+    }
 }
 //network
 .section-networks {
@@ -162,7 +159,7 @@ header {
     padding-bottom: 50px;
 
     h2 {
-        font-family: 'Playfair Display', serif;
+        font-family: "Playfair Display", serif;
         font-weight: bold;
         font-size: 40px;
     }
@@ -181,12 +178,10 @@ header {
     padding-top: 50px;
     min-height: 506px;
 
-
     h2 {
         font-family: "Playfair Display", serif;
         font-weight: bold;
         font-size: 40px;
-        
     }
 
     p {
@@ -202,11 +197,10 @@ header {
         padding: 40px 20px 10px;
         border-radius: 11px;
         margin-bottom: 20px;
-        
 
         .testimonial-content {
             min-height: 380px;
-            }
+        }
         h3 {
             font-size: 22px;
         }
@@ -230,15 +224,10 @@ header {
             margin-left: -20px;
             margin-right: -20px;
         }
-
     }
 
-    .lost-icon {
-        height: 650px;
-        width: 650px;
-    }
-
-    .need-help{
+    .need-help {
+        t
         padding-top: 200px;
         min-height: 506px;
         h2 {
@@ -249,30 +238,26 @@ header {
         }
 
         .btn-get-register {
-            background-color: #D4864B;
+            background-color: #d4864b;
             color: #ffffff;
             padding-left: 0;
-            
-    
+
             &:hover {
-                background-color:#FF9E53 ;
+                background-color: #ff9e53;
                 color: #ffffff;
             }
         }
 
         .btn-need-help {
             background-color: #f2f2f2;
-            color: #FF9E53;
+            color: #ff9e53;
             margin-left: 0px;
             &:hover {
-                background-color:#C6BDB4 ;
-                color:#FF9E53;
+                background-color: #c6bdb4;
+                color: #ff9e53;
             }
         }
     }
-    
-
-    
 }
 
 .section-footer {
@@ -285,7 +270,6 @@ header {
     min-height: 310px;
     background-color: #e4e6eb;
     margin-top: -70px;
-    
 }
 
 .section-details-content {
@@ -308,7 +292,6 @@ header {
     .card-details {
         padding: 30px;
         border-radius: 11px;
-        
 
         h1 {
             font-size: 26px;
@@ -341,7 +324,7 @@ header {
             }
 
             .text-blue {
-                color: #071C4D;
+                color: #071c4d;
                 font-weight: bold;
             }
 
@@ -357,11 +340,11 @@ header {
             color: #b1b1b1;
         }
 
-        .bank{
+        .bank {
             .bank-item {
                 h3 {
                     font-size: 18px;
-                    color: #071C4D;
+                    color: #071c4d;
                     margin-bottom: 0;
                 }
 
@@ -377,7 +360,7 @@ header {
                     p {
                         font-weight: normal;
                         font-size: 16px;
-                        color: #071C4D;
+                        color: #071c4d;
                     }
                 }
             }
@@ -408,7 +391,7 @@ header {
         }
 
         .btn-add-now {
-            background-color: #071C4D;
+            background-color: #071c4d;
             color: #fff;
 
             &:hover {
@@ -453,7 +436,7 @@ header {
     .gallery {
         .xzoom-container {
             display: block;
-            
+
             .xzoom {
                 width: 100%;
                 box-shadow: none;
@@ -465,9 +448,6 @@ header {
                 box-shadow: none;
             }
         }
-
-        
-
     }
 
     .members {
@@ -482,13 +462,13 @@ header {
     }
 
     .btn-join-now {
-        background-color: #FF9E53;
+        background-color: #ff9e53;
         color: white;
         border-radius: 0;
 
         &:hover {
-            background-color:#F8B887;
-            color: #ffffff
+            background-color: #f8b887;
+            color: #ffffff;
         }
     }
 }
@@ -498,7 +478,7 @@ header {
     h1 {
         font-weight: 600;
         font-size: 26px;
-        color: #071C4D;
+        color: #071c4d;
     }
 
     p {
@@ -509,7 +489,7 @@ header {
 
     .btn-home-page {
         border-radius: 4px;
-        background-color: #071C4D;
+        background-color: #071c4d;
         color: #fff;
 
         &:hover {
@@ -519,10 +499,9 @@ header {
     }
 }
 
-
 .login-container {
     @media (min-width: 992px) {
-        background: linear-gradient(90deg,#ffff 60%,#071c4d 40%);
+        background: linear-gradient(90deg, #ffff 60%, #071c4d 40%);
         width: 100vw;
         height: 100vh;
     }
@@ -532,7 +511,7 @@ header {
     height: 100vh;
 
     .btn-login {
-        background-color: #FF9E53 ;
+        background-color: #ff9e53;
         color: #fff;
 
         &:hover {
@@ -548,7 +527,6 @@ header {
             text-align: left;
             color: #051334;
         }
-
     }
 
     .section-right {
@@ -559,10 +537,6 @@ header {
             font-size: 16px;
             text-align: center;
             color: #b1b1b1;
-
         }
     }
-
-   
-
 }

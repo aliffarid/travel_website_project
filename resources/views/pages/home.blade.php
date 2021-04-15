@@ -184,10 +184,7 @@
                     </div>
                 </div>
                 @guest
-                <div class="row">
-                    <div class="lost-animation col-6">
-                        <img class="lost-icon" src="frontend/images/Lost-rafiki.png" alt="">
-                    </div>
+                <div class="row justify-content-center">
                     <div class="col-6  need-help">
                         <h2>Need some help?</h2>
                         <p>if you still confused and didn't know how to use
@@ -205,10 +202,7 @@
                 @endguest
 
                 @auth
-                <div class="row">
-                    <div class="lost-animation col-6">
-                        <img class="lost-icon" src="frontend/images/Lost-rafiki.png" alt="">
-                    </div>
+                <div class="row justify-content-center">
                     <div class="col-6  need-help">
                         <h2>Need some help?</h2>
                         <p>if you still confused and didn't know how to use
